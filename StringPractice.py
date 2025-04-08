@@ -34,3 +34,59 @@ print(test_str4)
 test_integer = 100
 print(str(test_integer) + 'yen')
 
+#文字列の置換にはreplaceを使います
+#第一引数が変更対象、第二引数が変更後の文字列です
+test_str5 = 'python-izm'
+print(test_str5.replace('izm', 'ism'))
+
+#文字列の分割にはsplitを使います
+#戻り値はリストです
+test_str6 = 'python-izm'
+print(test_str6.split('-'))
+
+#文字列の桁揃えはrjustを使います
+#第一引数が全体の文字数、第二引数が埋め込む文字列です
+test_str7 = '1234'
+print(test_str7.rjust(10, '0'))
+print(test_str7.rjust(10, '!'))
+
+#特定の文字列を指定せずゼロで埋める場合はzfillを使います
+test_str8 = '1234'
+print(test_str8.zfill(10))
+print(test_str8.zfill(3))
+
+#文字列の戦闘が任意の文字列の時にtrueを返すstartswith
+test_str9 = 'python-izm'
+print(test_str9.startswith('python'))
+print(test_str9.startswith('izm'))
+
+#文字列中に任意の文字が含まれているかを調べるnin
+test_str10 = 'python-izm'
+print('z' in test_str10)
+print('s' in test_str10)
+
+#大文字もしくは小文字に変換するupper,lower
+test_str11 = 'Python-Izm.Com'
+print(test_str11.upper())
+print(test_str11.lower())
+
+#文字列の先頭、末尾を削除するときはlstrip,rstripを使います
+print('-------------------------------------------')
+test_str12 = '         python-izm.com'
+print(test_str12)
+
+test_str12 = test_str12.lstrip()
+print(test_str12)
+
+test_str12 = test_str12.lstrip('python')
+print(test_str12)
+
+print('-------------------------------------------')
+test_str13 = 'python-izm.com           '
+print(test_str13 + '/')
+
+test_str13 = test_str13.rstrip()
+print(test_str13 + '/')
+
+test_str13 = test_str13.rstrip('com')
+print(test_str13)
