@@ -17,7 +17,7 @@ test_str2 = test_str2 + 'izm'
 
 print(test_str2)
 
-#
+#文字列の結合はこっちでもおｋ
 test_str3 = '012'
 test_str3 += '345'
 test_str3 += '678'
@@ -25,10 +25,12 @@ test_str3 += '9'
 
 print(test_str3)
 
+#文字列の繰り返しならこの表現でもおｋ
 test_str4 = '012' * 3
 
 print(test_str4)
 
+#文字列への変換はこんな感じ
 test_integer = 100
 print(str(test_integer) + 'yen')
 
